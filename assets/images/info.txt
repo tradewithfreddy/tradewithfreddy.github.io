@@ -1,0 +1,2 @@
+Stat-Arb
+        Stat-Arb is the web version of the STARB bot, also focused on chart analysis.
