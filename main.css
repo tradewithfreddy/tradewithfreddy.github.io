@@ -1,0 +1,190 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+body {
+    font-family: 'Arial', sans-serif;
+    color:#00ffff;
+    background-color: black;
+    margin: 0;
+}
+
+#chart-container, #more-charts {
+    margin: 4rem;
+}
+
+#more-charts, #toggle-inputs
+{
+    display: none;
+}
+
+#controls {
+    position: fixed;
+    top: 0; /* You can adjust the top value as per your design */
+    left: 0; /* You can adjust the left value as per your design */
+    width: 100%; 
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+label {
+    color: #00ffff;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#chart-container > h3
+{
+    color:#00ffff;
+    font-size: medium;
+    font-weight: lighter;
+    text-align: center;
+}
+
+input,select, button {
+    font-size: 1rem;
+    color: #00ffff;
+    background-color: rgba(0,0,0,0.8);
+    border: 0.1px solid rgba(0,255,255,0.3);
+    box-sizing: border-box;
+}
+
+button#show-more-charts
+{
+    display: none;
+}
+
+input,select, button {
+    margin:2px 10px;
+    padding: 3px;
+}
+
+button {
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+div#div-exchanges > h2
+{
+    color:#00ffff;
+    text-align: center;
+}
+
+#results
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+#results > h3
+{
+    color:#00ffff;
+    font-size: medium;
+    font-weight: lighter;
+    text-align: center;
+}
+
+div#exchanges
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img
+{
+    margin: 0.5rem;
+    border-radius: 50%;
+}
+
+/* Media query for phones */
+@media screen and (max-width: 600px) {
+    #controls {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #chart-container, #more-charts {
+        margin: auto;
+    }
+    #chart-container
+    {
+        margin-top: 3rem;
+    }
+    #toggle-inputs
+    {
+        display: block;
+    }
+    input,select{
+        width: 95%;
+    }
+    #timeFrame
+    {
+        width:55%;
+        margin:auto;
+    }
+    #timeFrame,button
+    {
+        margin:2px 4px;
+    }
+    div#div-exchanges > h2
+    {
+        font-weight: lighter;
+    }
+    img
+    {
+        width:30px;
+        height: 30px;
+        margin: 0.5rem;
+        border-radius: 50%;
+    }
+}
+
+/* Media query for tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #controls {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #chart-container, #more-charts {
+        margin: 35px;
+    }
+
+    #chart-container
+    {
+        margin-top: 5rem;
+    }
+
+    input,select {
+        width: 30%;
+    }
+    input,select, button {
+        margin:2px 10px;
+    }
+}
+
+/* Media query for laptops and desktops */
+@media screen and (min-width: 1025px) {
+    #controls {
+        justify-content: space-evenly;
+    }
+
+    #chart-container
+    {
+        margin-top: 2.5rem;
+    }
+
+    input,select {
+        width: 20%;
+    }
+
+    button {
+        width: auto;
+    }
+}
+
+
+/*# sourceMappingURL=main.css.map*/
